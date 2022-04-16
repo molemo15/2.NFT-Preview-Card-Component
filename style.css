@@ -1,0 +1,145 @@
+ @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+	--Soft-blue: hsl(215, 51%, 70%);
+	--Cyan: hsl(178, 100%, 50%);
+	--main-BG: hsl(217, 54%, 11%);
+	--card-BG: hsl(216, 50%, 16%);
+	--line: hsl(215, 32%, 27%);
+	--White: hsl(0, 0%, 100%);
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Outfit', sans-serif;
+}
+
+.container {
+	height: 100vh;
+	background-color: var(--main-BG);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card {
+	background-color: var(--card-BG);
+	width: 88%;
+	padding: 2rem;
+	border-radius: 1rem;
+	max-width: 32rem;
+}
+
+.hero-container {
+	position: relative;
+	margin-bottom: 2rem;
+}
+
+#hero {
+	width: 100%;
+	border-radius: 1rem;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 3px;
+	background-color: hsl(178, 100%, 50%, 0.5);
+	border-radius: 1rem;
+	cursor: pointer;
+	display: none;
+}
+
+.eye-view {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.hero-container:hover .overlay {
+	display: block;
+}
+
+h2 {
+	color: var(--White);
+	cursor: pointer;
+	font-size: 2.4rem;
+	margin: 1rem 0;
+}
+
+h2:hover {
+	color: var(--Cyan);
+}
+
+p {
+	color: var(--Soft-blue);
+	font-size: 1.6rem;
+}
+
+.paragraph {
+	line-height: 24px;
+}
+
+.eth-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom:  1px solid var(--line);
+	padding-bottom: 1.6rem;
+	margin: 1rem 0;
+}
+
+.eth-container div {
+	display: inline-flex;
+	gap: 1rem;
+}
+
+#eth-p {
+	color: var(--Cyan);
+}
+
+.eth-container div img {
+	/*width: 100%;*/
+	object-fit: contain;
+}
+
+.avatar {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.avatar img {
+	height: 3rem;
+	border-radius: 50%;
+	cursor: pointer;
+	border: 1px solid var(--White);
+}
+
+.avatar p span {
+	cursor: pointer;
+	color: var(--White);
+}
+
+.avatar p span:hover {
+	color: var(--Cyan);
+}
+
+.attribution a {
+	color: var(--White);
+}
+
+.attribution a:hover {
+	color: var(--Cyan);
+}
